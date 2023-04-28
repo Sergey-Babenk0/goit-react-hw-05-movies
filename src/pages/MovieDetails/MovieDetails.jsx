@@ -1,8 +1,8 @@
 import { useParams, useLocation, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { fetchMovieById } from '../../services/The-movie-database-API';
-import { MovieInfo } from 'components/MovieInfo/MovieInfo';
-import { AddMovieInformation } from 'components/AddMovieInformation/AddMovieInformation';
+import { MovieInfo } from '../../components/MovieInfo/MovieInfo';
+import { AddMovieInformation } from '../../components/AddMovieInformation/AddMovieInformation';
 import { Button, SpanForSVG } from './MovieDetails.styled';
 import { defaultImg } from '../../image/defaultImage';
 
@@ -39,7 +39,7 @@ const MovieDetails = () => {
       .catch(error => console.error(error));
   }, [id]);
 
-  const backLink = location.state?.from ?? 'movies';
+  const backLink = location.state?.from ?? '/movies';
 
   return (
     <>

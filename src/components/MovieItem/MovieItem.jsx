@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom';
 import { Item, StyledLink } from './MovieItem.styled';
 import { defaultImg } from '../../image/defaultImage';
 
-const ItemMovie = ({ movies }) => {
+const MovieItem = ({ movies }) => {
   const location = useLocation();
 
   return movies.map(({ id, title, poster_path }) => (
@@ -23,4 +23,4 @@ const ItemMovie = ({ movies }) => {
   ));
 };
 
-export { ItemMovie };
+export { MovieItem };

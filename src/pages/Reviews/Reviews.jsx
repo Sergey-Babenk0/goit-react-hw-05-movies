@@ -1,4 +1,4 @@
-import { fetchReviewsById } from 'services/The-movie-database-API';
+import { fetchReviewsById } from '../../services/The-movie-database-API';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import {

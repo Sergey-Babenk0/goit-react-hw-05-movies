@@ -1,4 +1,4 @@
-import { useForm } from 'react';
+import { useForm } from 'react-hook-form';
 import { SearchContainer, SearchInput, SearchButton } from './Form.styled';
 
 const Form = ({ onSubmit }) => {

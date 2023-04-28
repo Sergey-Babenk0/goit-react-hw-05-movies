@@ -1,10 +1,10 @@
-import { ItemMovie } from 'components/MovieItem/MovieItem';
+import { MovieItem } from '../../components/MovieItem/MovieItem';
 import { List } from './MoviesList.styled';
 
 const MoviesList = ({ movies }) => {
   return (
     <List>
-      <ItemMovie movies={movies} />
+      <MovieItem movies={movies} />
     </List>
   );
 };

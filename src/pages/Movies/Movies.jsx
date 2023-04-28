@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { fetchMovieBySearch } from 'services/The-movie-database-API';
+import { fetchMovieBySearch } from '../../services/The-movie-database-API';
 import { Form } from '../../components/Form/Form';
-import { MoviesList } from 'components/MoviesList/MoviesList';
+import { MoviesList } from '../../components/MoviesList/MoviesList';
 import { useSearchParams } from 'react-router-dom';
 
 const Movies = () => {
